@@ -1,0 +1,11 @@
+{% extends "music/index.html" %}
+
+{% block content %}
+
+<h2>New Music</h2>
+    <form method="POST" class="AlbumForm">{% csrf_token %}
+        <table>{{ form.as_table }}</table>
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+{% endblock %}

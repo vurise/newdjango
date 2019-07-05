@@ -1,0 +1,13 @@
+1. come to this folder
+2. SHIFT+"Right click" anywhere
+3. select windows powershell (use only this and not the that you get from search)
+4. enter env\Scripts\activate (This will activate your viertualenv)
+5. do anything related to python or django here
+6. type "deactivate" when you are done
+
+
+REMEMBER DONT DO ANYTHING RELATED TO PYTHON OUTSIDE THE VIRTUALENV OR ELSE THERE WILL BE ERROR
+
+Now Im logging off
+Enjoy Python
+Bye

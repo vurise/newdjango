@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/music.css' %}">
+
+
+	<title> homepage!!!!!</title>
+</head>
+
+<body>
+	{% if all_albums %}
+	<h3>here are all my albums</h3>
+	<h4>click on the links</h4>
+<ul>
+	{% for album in all_albums %}
+
+	<li><a href="/music/{{ album.id}}/">{{album.album_title}}</a></li>
+
+	{% endfor %}
+	<h4>type music/form/ in the url to add entries</h4>
+
+{% else %}
+
+	<h3> you dont have any albums</h3>
+{% endif %}
+</ul>
+{% block content %}
+
+
+{% endblock %}
+</body>
+</html>
